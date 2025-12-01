@@ -33,7 +33,7 @@ metadata = {
     'training_samples': 100
 }
 
-# Save metadata
+# Save metadata - THIS WAS MISSING THE IMPORT
 os.makedirs('models', exist_ok=True)
 with open('models/model_metadata.json', 'w') as f:
     json.dump(metadata, f, indent=2)
